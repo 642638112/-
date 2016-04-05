@@ -192,7 +192,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 Intent intent = new Intent(
                         MainActivity.this,
                         PuzzleMainActivity.class);
-                intent.putExtra("picPath", imagePath);
+
+                intent.putExtra("mPicPath", imagePath); System.out.println("!!!!!!!!!!mPicPath=" + imagePath);
                 intent.putExtra("mType", mType);
                 cursor.close();
                 startActivity(intent);
